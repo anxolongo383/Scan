@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="File.css">
+</head>
+<body>
+
+    <header>
+        <div id="heading">
+            <h1>Safe Hub</h1>
+        </div>
+        
+        <div id="nav-bar">
+            <nav>
+                <a href="about.html">About</a>
+                <a href="#">Home</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    
+        <br><br>
+    </header>
+
+    <main>
+
+        <div class="afterCard">
+            <h1>THANKS FOR USING THE SOFTWARE. THESE ARE YOUR RESULTS</h1>
+            {% if nonfraud_count = len(df[df.Class == 0]) %}
+            <h1>We have detected fraud</h1>
+
+            {% else if fraud_count = len(df[df.Class == 1]) %}
+            <h1>You're safe from fraud</h1>
+
+            {% endif %}
+
+            <br><br>
+            <a href="Scan.html">Go back to home page</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3 id="footerhead">LEARN MORE ABOUT US</h3>
+
+        <div id="footerLinks">
+            <nav>
+                <a href="#">CONTACT US</a>
+                <a href="#">DEVELOPERS</a>
+            </nav>
+        </div>
+
+        <p>&copy Safe Hub | All Rights Reserved</p>
+    </footer>    
+
+	
+	<script src="file.js"></script>
+</body>
+</html>

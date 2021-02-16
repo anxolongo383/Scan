@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="File.css">
+</head>
+<body>
+
+    <header>
+        <div id="heading">
+            <h1>Let's Scan Your Documents</h1>
+        </div>
+        
+        <div id="nav-bar">
+            <nav>
+                <a href="about.html">About</a>
+                <a href="Home.html">Home</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+
+        <br>
+    </header>
+
+    <main>
+
+        <h1 id="scan-header">SELECT THE FILE YOU WOULD LIKE TO SCAN</h1>
+
+        <!--Heading code for body of the scanning page-->
+
+        <div id="second-scan-head">
+            <h1>UPLOAD YOUR <span class="csv"><i>CSV FILE</i></span> HERE</h1>
+        </div>
+
+        <!--This is the div that wraps the scanning form code-->
+
+        <div id="scannerForm">
+            <form method="POST" action="after">
+                <input type="file" name="csvFile" id="fileID">
+                <br>
+                <!-- <input type="button" id="custom-button" value="CHOOSE A FILE">
+                <span id="custom-text">No file Chosen yet</span>
+                <br> -->
+                <input type="submit" value="Submit" id="btn">
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <h3 id="footerhead">LEARN MORE ABOUT US</h3>
+
+        <div id="footerLinks">
+            <nav>
+                <a href="contact.html">CONTACT US</a>
+                <a href="about.html">DEVELOPERS</a>
+            </nav>
+        </div>
+
+        <p>&copy Safe Hub | All Rights Reserved</p>
+    </footer>    
+
+	
+	<script src="file.js"></script>
+</body>
+</html>
